@@ -30,7 +30,7 @@ So this lancache is super duper handy if you are hosting a lan party or if the p
 - Now we're going to the fstab to mount it on boot `nano /etc/fstab` - copy and paste this next part in after creating a new line
 - ``` /dev/sdb1       /CACHE    ext4    defaults        0       0```
 - hit control and o <enter>, hit control and x
-- now we're going to mount it - `sudo mount -a
+- now we're going to mount it - `sudo mount -a`
 
 ## DOCKER
 - This is legit copy pasted from - https://docs.docker.com/install/linux/docker-ce/ubuntu/
