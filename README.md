@@ -80,7 +80,8 @@ So this lancache is super duper handy if you are hosting a lan party or if the p
   ``` sudo nano update.sh```
 - copy paste the next part in with changes to the parts with < >
   
-```sudo docker stop sniproxy
+```
+sudo docker stop sniproxy
 sudo docker stop lancache
 sudo docker stop steamcache-dns
 sudo docker rm sniproxy
