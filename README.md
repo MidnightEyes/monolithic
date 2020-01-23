@@ -2,6 +2,8 @@ Right so let's begin, I started this "guide" of sorts since I'm currently in a h
 
 So this lancache is super duper handy if you are hosting a lan party or if the people in your house / area of server are downloading games a lot, this cuts tons of bandwidth, Mine kept up pretty well during a 50~ person lan party.
 
+
+
 ## Things You Need
 
   - Some form of linux, I prefer Ubuntu
@@ -32,7 +34,7 @@ So this lancache is super duper handy if you are hosting a lan party or if the p
 - hit control and o <enter>, hit control and x
 - now we're going to mount it - `sudo mount -a`
 
-## DOCKER
+## DOCKER (START HERE if you have already set up a basic machine and are not using a dedicated drive for the cache)
 - This is legit copy pasted from - https://docs.docker.com/install/linux/docker-ce/ubuntu/
 - Make sure any previous versions of Docker aren't installed by using 
  - ```sudo apt-get remove docker docker-engine docker.io containerd runc```
