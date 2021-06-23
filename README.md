@@ -104,7 +104,8 @@ sudo docker run --restart unless-stopped --name steamcache-dns --detach -p 53:53
 ```cd /CACHE```
 ```nano start.sh```
 - copy paste the next part
-```sudo docker stop sniproxy
+```
+sudo docker stop sniproxy
 sudo docker stop lancache
 sudo docker stop steamcache-dns
 sudo docker start sniproxy
