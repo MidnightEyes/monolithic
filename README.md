@@ -89,7 +89,7 @@ sudo docker stop steamcache-dns
 sudo docker rm sniproxy
 sudo docker rm lancache
 sudo docker rm steamcache-dns
-sudo docker run --restart unless-stopped --name lancache --detach -v /CACHE/data:/data/cache -v /CACHE/logs:/data/logs -p 80:80 -e CACHE_MEM_SIZE=<HOW MUCH RAM>m -e CACHE_DISK_SIZE=1900g steamcache/monolithic:latest
+sudo docker run --restart unless-stopped --name lancache --detach -v /CACHE/data:/data/cache -v /CACHE/logs:/data/logs -p 80:80 -e CACHE_MEM_SIZE=<HOW MUCH RAM>m -e CACHE_DISK_SIZE=<HOW MUCH DISK SPACE IS USED>g steamcache/monolithic:latest
 sudo docker run --restart unless-stopped --name sniproxy --detach -p 443:443 steamcache/sniproxy:latest
 sudo docker run --restart unless-stopped --name steamcache-dns --detach -p 53:53/udp -e UPSTREAM_DNS="1.1.1.1" -e USE_GENERIC_CACHE=true -e LANCACHE_IP="x.x.x.x" steamcache/steamcache-dns:latest
 ```
